@@ -1,0 +1,16 @@
+service: serverless-demo
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-west-2
+  memorySize: 128
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+          
+plugins:
+  - serverless-offline

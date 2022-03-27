@@ -1,0 +1,17 @@
+{
+  "name": "serverless_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tm": "sls offline start --skipCacheInvalidation"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0",
+    "serverless-offline": "^6.9.0"
+  }
+}
