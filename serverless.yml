@@ -15,4 +15,4 @@ functions:
       MAYUR_VERSION: ${env:MAYUR_VERSION}
           
 plugins:
-  - serverless-offline
+  - serverless-offline 
