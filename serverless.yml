@@ -11,6 +11,8 @@ functions:
     events:
       - http: ANY /
       - http: 'ANY {proxy+}'
+    environment:
+      MAYUR_VERSION: ${env:MAYUR_VERSION}
           
 plugins:
   - serverless-offline
